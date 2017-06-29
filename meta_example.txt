@@ -1,0 +1,21 @@
+#SampleID	Plant	Date	Year	test
+F3D0	Aalborg W	2/6/15	2015	a
+F3D141	Aalborg W	2/7/15	2015	a
+F3D142	Aalborg W	2/8/15	2015	a
+F3D143	Aalborg W	2/9/15	2015	a
+F3D144	Aalborg W	2/10/15	2015	a
+F3D145	Aalborg W	5/7/16	2016	a
+F3D146	Aalborg W	5/8/16	2016	a
+F3D147	Aalborg W	5/9/16	2016	a
+F3D148	Aalborg W	5/10/16	2016	a
+F3D149	Aalborg E	5/11/16	2016	a
+F3D150	Aalborg E	5/12/16	2016	b
+F3D1	Aalborg E	7/3/16	2016	b
+F3D2	Aalborg E	7/4/16	2016	b
+F3D3	Aalborg E	7/5/16	2016	b
+F3D5	Aalborg E	7/6/16	2016	b
+F3D6	Aalborg E	7/7/16	2016	b
+F3D7	Other	7/8/16	2016	b
+F3D8	Other	7/9/16	2016	b
+F3D9	Other	7/10/16	2016	b
+Mock	Other	7/11/16	2016	b

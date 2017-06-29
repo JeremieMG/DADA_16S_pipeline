@@ -23,14 +23,26 @@
 ```
 mkdir results
 ```
+- Create repository for the data
+```
+mkdir forward
+mkdir reverse
+```
 
-- Create custom metadata file (see example below or meta_example.txt):
+- Create your custom metadata file (see example below or meta_example.txt):
 ```
 #SampleID Meta_1  Meta_2 ..
 Sample_1  data  data  ..
 Sample_2  data  data  ..
 ```
 ### Note: Make sure the columns are separated by tabulation
+
+- After de-multiplexing your data and removing the primers, add the forward files into the forward repository and reverse files into the reverse repository
+
+- You can also download the MiSeq data to try the pipeline:
+```
+wget https://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip
+```
 
 ## Usage
 - With qsub, simply run the queue_script.sh:
@@ -60,3 +72,17 @@ sh queue_script.sh
   - Custom analysis:
     - Modify the plot_script.R as you wish
     - Open the pdf to view the results
+    
+- Phyloseq:
+  - Start R terminal
+  - Load R packages:
+    - Phyloseq
+    - Ampvis
+    - ggplot2
+  - Load data into a phyloseq object: 
+  ```
+  otutable <- read.delim(file = "ampvis_tab.txt", sep = "\t", header = T, check.names = F, row.names = 1)
+  metadata <- read.delim(file = "metadata.txt", header = T, sep = "\t")
+  set <- amp_load(otutable = otutable, metadata = metadata)
+  ```
+  - Phyloseq is a powerful tool, but analyse expectations can change according to people and metadata. See the phylo_example file to find some examples (Using meta_example.txt and MiSeq data).

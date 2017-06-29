@@ -15,8 +15,8 @@
 
 ## Setup environment
 - Download following files: 
-- rdp_species_assignment_16.fa.gz (https://zenodo.org/record/801828#.WVS6XelLdPY)
-- rdp_train_set_16.fa.gz (https://zenodo.org/record/801828#.WVS6XelLdPY)
+ - rdp_species_assignment_16.fa.gz (https://zenodo.org/record/801828#.WVS6XelLdPY)
+ - rdp_train_set_16.fa.gz (https://zenodo.org/record/801828#.WVS6XelLdPY)
 
 - Create repository for the results:
 ```
